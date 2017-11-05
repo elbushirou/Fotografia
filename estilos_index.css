@@ -1,0 +1,122 @@
+body {
+font-style: italic;
+background-color: #02010a;
+font-family:'Dancing Script', cursive;
+width: 900px;
+margin-left: auto;
+margin-right: auto;
+}
+header h1 {
+  float: left;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a
+}
+header {
+  margin-bottom: 5px
+  padding: 10px 10px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #5b7989;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#cabecera a {
+  color: white;
+  text-shadow: 2px 2px 2px #02010a
+}
+.paisajes {
+    text-decoration: none;
+    order: 2;
+}
+.retratos {
+  text-decoration: none;
+  order: 3;
+}
+.indice{
+  order: 1;
+}
+nav {
+  width: 200px
+}
+.imagen_central {
+  background-color: #82c3a6;
+  padding: 50px 100px;
+}
+img{
+margin: 5px;
+box-shadow: 2px 2px #02010a;
+max-width: 100%;
+max-height: 90%;
+}
+#imagen_central{
+  border: solid 1px black;
+}
+.contenedor {
+  background-color: #d5c75f;
+  padding: 10px;
+  border: 1px;
+  display: flex;
+  flex-direction:row;
+}
+.img1 {
+  margin: 5px;
+  padding: 50px 50px;
+  max-width: 90%;
+  align-items: center;
+}
+.img2 {
+  margin: 5px;
+  padding: 50px 50px;
+  max-width: 90%;
+  align-items: center;
+}
+#imagen_izq {
+  max-height:90%;
+  max-width: 90%;
+  box-shadow: 2px 2px #02010a;
+}
+#imagen_der {
+  max-height: 90%;
+  max-width: 90%;
+  border: solid 1px black;
+  box-shadow: 2px 2px #02010a;
+
+}
+.contenedor_contactos {
+  background-color: #C6d5c5;
+  border-radius: 10px;
+  padding: 10px 10px;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+li {
+  list-style-type: none;
+}
+#imagen_izq:hover {
+  animation: rotacion 3s;
+  box-shadow:2px 2px #82c3a6;
+}
+@keyframes rotacion {
+  from{
+    transform: rotate(10deg);
+  }
+  to{
+  transform: rotate(0deg);
+  }
+}
+
+#imagen_der:hover {
+  transform: translateX(20px) translateY(-5px);
+  box-shadow:2px 2px #82c3a6;
+}
+@media (max-width: 900px) {
+  body{
+    width: 100%;
+  }
+  .contenedor{
+    flex-direction: column;
+  }
+}

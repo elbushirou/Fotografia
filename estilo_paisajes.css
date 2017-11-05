@@ -1,0 +1,92 @@
+body {
+font-style: italic;
+background-color: #02010a;
+font-family:'Dancing Script', cursive;
+}
+header h1 {
+  float: left;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a
+}
+header {
+  margin-bottom: 5px
+  padding: 10px 10px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #5b7989;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#cabecera a {
+  color: white;
+  text-shadow: 2px 2px 2px #02010a
+}
+.paisajes {
+    order: 2;
+}
+.retratos {
+  text-decoration: none;
+  order: 3;
+}
+.indice{
+  text-decoration: none;
+  order: 1;
+}
+nav {
+  width: 200px
+}
+
+
+.contenedor_galeria {
+  background-color: #d5c75f;
+  padding: 10px;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+
+.img1 {
+  margin: 5px;
+  padding: 50px 50px;
+  max-width: 20%;
+  align-items: center;
+}
+
+#imagen_izq {
+  max-height:90%;
+  max-width: 90%;
+  border: solid 1px black;
+  box-shadow: 2px 2px #02010a;
+}
+#imagen1{
+ max-height:90%;
+ max-width: 90%;
+ border: solid 1px black;
+ box-shadow: 2px 2px #02010a;
+ filter: blur(10px);
+}
+#imagen3{
+  max-height:90%;
+  max-width: 90%;
+  border: solid 1px black;
+  box-shadow: 2px 2px #02010a;
+  filter:sepia(90%);
+}
+
+.contenedor_galeria img:nth-child(odd){
+  filter: grayscale(100%);
+}
+
+.contenedor_contactos {
+    background-color: #C6d5c5;
+    border-radius: 10px;
+    padding: 10px 10px;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  li {
+    list-style-type: none;
+  }
