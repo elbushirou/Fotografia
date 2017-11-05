@@ -90,3 +90,35 @@ nav {
   li {
     list-style-type: none;
   }
+  header {
+    animation: slidein 2s;
+  }
+
+  @keyframes slidein {
+    0%{
+      margin-top:150%;
+    }
+    60%{
+      margin-top: -5%;
+    }
+    100%{
+      margin-top: 0%;
+    }
+  }
+  @media (max-width: 899px) {
+    body{
+      width: 100%;
+    }
+    .contenedor{
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 899px) {
+    footer {
+      width: 100%;
+    }
+    .contenedor_contactos{
+      flex-direction: column;
+    }
+  }
